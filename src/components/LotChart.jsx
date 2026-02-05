@@ -128,13 +128,13 @@ const LotChart = () => {
         handedOverLotLayer.definitionExpression = queryMunicipalBarangay;
       }
     } else if (prioritySelected !== "None") {
-      if (!municipal) {
+      if (!municipals) {
         lotLayer.definitionExpression = queryPriority;
         handedOverLotLayer.definitionExpression = queryPriority;
-      } else if (municipal && !barangay) {
+      } else if (municipals && !barangays) {
         lotLayer.definitionExpression = queryPriorityMunicipality;
         handedOverLotLayer.definitionExpression = queryPriorityMunicipality;
-      } else if (municipal && barangay) {
+      } else if (municipals && barangays) {
         lotLayer.definitionExpression = queryPriorityMunicipalBarangay;
         handedOverLotLayer.definitionExpression =
           queryPriorityMunicipalBarangay;

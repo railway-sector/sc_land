@@ -1,1 +1,0 @@
-import{e4 as i,e5 as l,e6 as o,e7 as c}from"./index-BCSI5g4r.js";function f({level:e,class:n,...t},s){const r=a(e);return i(`h${r}`,{...t,"aria-level":String(r),class:l(o.heading,n),role:"heading"},s)}function a(e){return c(Math.ceil(e),1,6)}function h(e,n=1){return a(e+n)}export{h as l,f as s};

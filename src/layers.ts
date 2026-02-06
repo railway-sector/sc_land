@@ -1,5 +1,6 @@
-import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
+// const FeatureLayer = await $arcgis.import("@arcgis/core/layers/FeatureLayer");
 
+import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 import LabelClass from "@arcgis/core/layers/support/LabelClass";
 import SimpleFillSymbol from "@arcgis/core/symbols/SimpleFillSymbol";
 import UniqueValueRenderer from "@arcgis/core/renderers/UniqueValueRenderer";

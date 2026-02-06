@@ -50,6 +50,7 @@ import {
   valueLabelColor,
 } from "./uniqueValues";
 
+/////////////////////////////
 /* Standalone table for Dates */
 export const dateTable = new FeatureLayer({
   portalItem: {

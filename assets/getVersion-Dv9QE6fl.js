@@ -1,0 +1,1 @@
+import{dc as f,dd as u,de as m,fO as p,cf as v}from"./index-aRi8Xk-b.js";async function y(a,s,i){const e=f(a),r=u(e.query,{query:m({f:"json"}),...i});s.startsWith("{")&&(s=s.slice(1,-1));const t=p(e.path,"versions",s),{data:o}=await v(t,r),{versionName:n,versionGuid:d,...c}=o;return{...c,versionIdentifier:{name:n,guid:d}}}export{y as getVersion};

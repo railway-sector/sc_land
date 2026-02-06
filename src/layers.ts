@@ -60,7 +60,7 @@ export const dateTable = new FeatureLayer({
   },
 });
 
-/* SOMCO Fence */
+//* SOMCO Fence */
 // const line_3d = new LineSymbol3D({
 //   symbolLayers: [
 //     new LineSymbol3DLayer({

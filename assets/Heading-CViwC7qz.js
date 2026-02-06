@@ -1,1 +1,0 @@
-import{a4 as i,c6 as l,bJ as c,aW as o}from"./index-aRi8Xk-b.js";function f({level:a,class:e,...t},s){const n=r(a);return i(`h${n}`,{...t,"aria-level":String(n),class:l(c.heading,e),role:"heading"},s)}function r(a){return o(Math.ceil(a),1,6)}function h(a,e=1){return r(a+e)}export{h as l,f as s};

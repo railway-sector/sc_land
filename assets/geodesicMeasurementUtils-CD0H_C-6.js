@@ -1,0 +1,1 @@
+import{y as t}from"./geodesicUtils-Cfv0uT1u.js";import{ac as p}from"./index-CgzAF5Ey.js";function c(r){return t(r)||p(r)}function u(r,n,i,...o){return t(r)?n.apply(void 0,o):r.isWebMercator?i.apply(void 0,o):null}const f=1e5;export{f as p,c as r,u as t};

@@ -1,0 +1,1 @@
+import{mt as e,mu as f}from"./index-CgzAF5Ey.js";function n(u,t){return t.push(u.buffer),{buffer:u.buffer,layout:new e(u.layout)}}function o(u){return new f(u.layout).createView(u.buffer)}export{o as t,n as u};

@@ -1,1 +1,0 @@
-import{d3 as c,d4 as f,d5 as p,c6 as v}from"./index-CVzGOCNQ.js";async function h(a,o,t){const e=c(a),i=o.toJSON(),r=f(e.query,{query:p({...i,f:"json"}),...t,authMode:"immediate",method:"post"}),s=`${e.path}/create`,{data:n}=await v(s,r),{versionName:d,versionGuid:u,...m}=n.versionInfo;return{...m,versionIdentifier:{name:d,guid:u}}}export{h as createVersion};

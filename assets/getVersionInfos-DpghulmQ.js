@@ -1,0 +1,1 @@
+import{dc as p,dd as c,de as v,cf as $}from"./index-Brd6-W-v.js";async function I(e,o,s){const n=p(e),r=o.toJSON(),a=c(n.query,{query:v({...r,f:"json"}),...s,authMode:"no-prompt"}),t=`${n.path}/versionInfos`,{data:i}=await $(t,a);return i.versions.map(u=>{const{versionName:d,versionGuid:f,...m}=u;return{...m,versionIdentifier:{name:d,guid:f}}})}export{I as getVersionInfos};

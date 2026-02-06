@@ -1,0 +1,1 @@
+import{dc as f,dd as m,de as p,cf as v}from"./index-Brd6-W-v.js";async function h(a,o,t){const e=f(a),i=o.toJSON(),r=m(e.query,{query:p({...i,f:"json"}),...t,authMode:"immediate",method:"post"}),s=`${e.path}/create`,{data:n}=await v(s,r),{versionName:d,versionGuid:u,...c}=n.versionInfo;return{...c,versionIdentifier:{name:d,guid:u}}}export{h as createVersion};

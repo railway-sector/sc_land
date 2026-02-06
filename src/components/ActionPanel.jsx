@@ -14,7 +14,7 @@ import "@arcgis/map-components/components/arcgis-basemap-gallery";
 import "@arcgis/map-components/components/arcgis-layer-list";
 // import "@arcgis/map-components/components/arcgis-legend";
 import "@arcgis/map-components/components/arcgis-direct-line-measurement-3d";
-import "@arcgis/map-components/components/arcgis-area-measurement-3d";
+// import "@arcgis/map-components/components/arcgis-area-measurement-3d";
 import { defineActions } from "../uniqueValues";
 import HandedOverAreaChart from "./HandedOverAreaChart";
 import LotProgressChart from "./LotProgressChart";

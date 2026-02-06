@@ -4,7 +4,7 @@ import "../App.css";
 import "@arcgis/map-components/dist/components/arcgis-scene";
 import "@arcgis/map-components/components/arcgis-scene";
 import "@arcgis/map-components/components/arcgis-zoom";
-// import "@arcgis/map-components/components/arcgis-legend";
+import "@arcgis/map-components/components/arcgis-legend";
 import "@arcgis/map-components/components/arcgis-basemap-gallery";
 import "@arcgis/map-components/components/arcgis-layer-list";
 import "@arcgis/map-components/components/arcgis-expand";
@@ -13,7 +13,7 @@ import "@arcgis/map-components/components/arcgis-search";
 import "@arcgis/map-components/components/arcgis-compass";
 import {
   structureLayer,
-  pierAccessLayer,
+  // pierAccessLayer,
   stationLayer,
   alignmentGroupLayer,
   nloLoOccupancyGroupLayer,
@@ -25,6 +25,7 @@ import {
   handedOverLotLayer,
 } from "../layers";
 import "@esri/calcite-components/dist/components/calcite-button";
+import { pierAccessLayer } from "../Layer";
 
 function MapDisplay() {
   const [sceneView, setSceneView] = useState();
@@ -33,18 +34,18 @@ function MapDisplay() {
 
   useEffect(() => {
     if (sceneView) {
-      arcgisScene.map.add(pierAccessLayer);
-      arcgisScene.map.add(lotGroupLayer);
-      arcgisScene.map.add(ngcp7_groupLayer);
-      arcgisScene.map.add(ngcp6_groupLayer);
-      arcgisScene.map.add(structureLayer);
-      arcgisScene.map.add(nloLoOccupancyGroupLayer);
-      arcgisScene.map.add(alignmentGroupLayer);
-      arcgisScene.map.add(stationLayer);
-      arcgisScene.map.add(somco_fense_layer);
-      arcgisScene.map.add(handedOverLotLayer);
-      arcgisScene.map.ground.navigationConstraint = "none";
-      arcgisScene.view.ui.components = [];
+      arcgisScene?.map.add(pierAccessLayer);
+      // arcgisScene?.map.add(lotGroupLayer);
+      // arcgisScene?.map.add(ngcp7_groupLayer);
+      // arcgisScene?.map.add(ngcp6_groupLayer);
+      // arcgisScene?.map.add(structureLayer);
+      // arcgisScene?.map.add(nloLoOccupancyGroupLayer);
+      // arcgisScene?.map.add(alignmentGroupLayer);
+      // arcgisScene?.map.add(stationLayer);
+      // arcgisScene?.map.add(somco_fense_layer);
+      // arcgisScene?.map.add(handedOverLotLayer);
+      // arcgisScene?.map.ground.navigationConstraint = "none";
+      // arcgisScene.view.ui.components = [];
 
       arcgisSearch.sources = [
         {

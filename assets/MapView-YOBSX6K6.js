@@ -1,0 +1,1 @@
+import{_ as t,e as s,g as a}from"./index-BrQW8HOS.js";import{a as o}from"./View2D-CXXq0vs5.js";let e=class extends o{constructor(r){super(r),this.view2dType="map"}};t([s({readOnly:!0})],e.prototype,"view2dType",void 0),e=t([a("esri.views.MapView")],e);const d=e;export{d as p};

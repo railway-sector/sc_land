@@ -1,0 +1,1 @@
+import{oD as n}from"./index-BrQW8HOS.js";class o extends n{constructor(s,e){super(s,e,"webmap")}}function a(r){return r!=null&&typeof r=="object"&&"declaredClass"in r&&r.declaredClass==="esri.WebMap"}const c=new o(2,35);export{c as n,a as r,o as s};

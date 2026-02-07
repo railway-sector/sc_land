@@ -1,0 +1,1 @@
+import{ja as e,O as a,aQ as o}from"./index-BrQW8HOS.js";function l(r){if(!r)return[];let t=e(r)?[r]:a.isCollection(r)?r.toArray():Array.isArray(r)?r:[];return t=t?.filter(o),(t?.length??0)===0?[]:t}export{l as i};

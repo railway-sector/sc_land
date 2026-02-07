@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
-import OAuthInfo from "@arcgis/core/identity/OAuthInfo";
-import IdentityManager from "@arcgis/core/identity/IdentityManager";
-import Portal from "@arcgis/core/portal/Portal";
+// import OAuthInfo from "@arcgis/core/identity/OAuthInfo";
+// import IdentityManager from "@arcgis/core/identity/IdentityManager";
+// import Portal from "@arcgis/core/portal/Portal";
+
+declare const $arcgis: any;
+const OAuthInfo = await $arcgis.import("@arcgis/core/identity/OAuthInfo");
+const IdentityManager = await $arcgis.import(
+  "@arcgis/core/identity/IdentityManager",
+);
+const Portal = await $arcgis.import("@arcgis/core/portal/Portal");
+
 import "./App.css";
 import "./index.css";
-// import "@arcgis/map-components/dist/components/arcgis-map";
-// import "@arcgis/map-components/components/arcgis-map";
-// import "@arcgis/map-components/components/arcgis-zoom";
-// import "@arcgis/map-components/components/arcgis-legend";
-// import "@esri/calcite-components/dist/components/calcite-shell";
-// import "@esri/calcite-components/dist/calcite/calcite.css";
+import "@esri/calcite-components/dist/components/calcite-shell";
 import { CalciteShell } from "@esri/calcite-components-react";
 import MapDisplay from "./components/MapDisplay";
 import ActionPanel from "./components/ActionPanel";

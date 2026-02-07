@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import { useEffect, useRef, useState, use } from "react";
-import { structureLayer } from "../layers";
+import { structureLayer } from "../fLayers";
 import FeatureFilter from "@arcgis/core/layers/support/FeatureFilter";
 import Query from "@arcgis/core/rest/support/Query";
 import * as am5 from "@amcharts/amcharts5";
@@ -197,7 +197,7 @@ const StructureChart = () => {
       arcgisScene?.whenLayerView(structureLayer).then((layerView: any): any => {
         //chartLayerView = layerView;
 
-        structureLayer.queryFeatures(query).then(function (results) {
+        structureLayer.queryFeatures(query).then(function (results: any) {
           const RESULT_LENGTH = results.features;
           const ROW_N = RESULT_LENGTH.length;
 
@@ -211,7 +211,7 @@ const StructureChart = () => {
             objectIds: objID,
           });
 
-          structureLayer.queryExtent(queryExt).then(function (result) {
+          structureLayer.queryExtent(queryExt).then(function (result: any) {
             if (result.extent) {
               arcgisScene?.goTo(result.extent);
             }

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import { useRef, useState, useEffect, memo, use } from "react";
-import { nloLayer, occupancyLayer } from "../layers";
+import { nloLayer, occupancyLayer } from "../fLayers";
 import FeatureFilter from "@arcgis/core/layers/support/FeatureFilter";
 import Query from "@arcgis/core/rest/support/Query";
 import * as am5 from "@amcharts/amcharts5";
@@ -187,7 +187,7 @@ const NloChart = memo(() => {
       arcgisScene?.whenLayerView(nloLayer).then((layerView: any): any => {
         //chartLayerView = layerView;
 
-        nloLayer.queryFeatures(query).then(function (results) {
+        nloLayer.queryFeatures(query).then(function (results: any) {
           const RESULT_LENGTH = results.features;
           const ROW_N = RESULT_LENGTH.length;
 
@@ -201,7 +201,7 @@ const NloChart = memo(() => {
             objectIds: objID,
           });
 
-          nloLayer.queryExtent(queryExt).then(function (result) {
+          nloLayer.queryExtent(queryExt).then(function (result: any) {
             if (result.extent) {
               arcgisScene?.goTo(result.extent);
             }

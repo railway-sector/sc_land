@@ -4,7 +4,7 @@ import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import { lastDateOfMonth, generateLotProgress } from "../Query";
-import { lotLayer } from "../layers";
+import { lotLayer } from "../fLayers";
 import Query from "@arcgis/core/rest/support/Query";
 import FeatureFilter from "@arcgis/core/layers/support/FeatureFilter";
 import {
@@ -285,7 +285,7 @@ const LotProgressChart = () => {
               objectIds: objID,
             });
 
-            lotLayer.queryExtent(queryExt).then(function (result) {
+            lotLayer.queryExtent(queryExt).then(function (result: any) {
               if (result.extent) {
                 arcgisScene?.goTo(result.extent);
               }

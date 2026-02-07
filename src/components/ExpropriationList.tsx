@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 /* eslint-disable array-callback-return */
 import { use, useEffect, useState } from "react";
-import { lotLayer } from "../layers";
+import { lotLayer } from "../fLayers";
 import Query from "@arcgis/core/rest/support/Query";
 import "@esri/calcite-components/dist/components/calcite-shell";
 import "@esri/calcite-components/dist/components/calcite-list";

@@ -1,8 +1,7 @@
 import "@esri/calcite-components/dist/components/calcite-panel";
-// import "@esri/calcite-components/dist/components/calcite-list-item";
-// import "@esri/calcite-components/dist/components/calcite-shell-panel";
-// import "@esri/calcite-components/dist/components/calcite-action";
-// import "@esri/calcite-components/dist/components/calcite-action-bar";
+import "@esri/calcite-components/dist/components/calcite-shell-panel";
+import "@esri/calcite-components/dist/components/calcite-action";
+import "@esri/calcite-components/dist/components/calcite-action-bar";
 import {
   CalciteShellPanel,
   CalciteActionBar,
@@ -10,11 +9,6 @@ import {
   CalcitePanel,
 } from "@esri/calcite-components-react";
 import { useEffect, useState } from "react";
-// import "@arcgis/map-components/components/arcgis-basemap-gallery";
-// import "@arcgis/map-components/components/arcgis-layer-list";
-// import "@arcgis/map-components/components/arcgis-legend";
-// import "@arcgis/map-components/components/arcgis-direct-line-measurement-3d";
-// import "@arcgis/map-components/components/arcgis-area-measurement-3d";
 import { defineActions } from "../uniqueValues";
 import HandedOverAreaChart from "./HandedOverAreaChart";
 import LotProgressChart from "./LotProgressChart";
@@ -24,7 +18,7 @@ import {
   ngcp_pole6,
   ngcp_pole7,
   ngcp_working_area6,
-} from "../layers";
+} from "../fLayers";
 
 function ActionPanel() {
   const [activeWidget, setActiveWidget] = useState(null);

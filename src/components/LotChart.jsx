@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, use } from "react";
-import { handedOverLotLayer, lotLayer } from "../layers";
+import { handedOverLotLayer, lotLayer } from "../fLayers";
 import FeatureFilter from "@arcgis/core/layers/support/FeatureFilter";
 import Query from "@arcgis/core/rest/support/Query";
 import * as am5 from "@amcharts/amcharts5";
@@ -17,8 +17,6 @@ import {
   polygonViewQueryFeatureHighlight,
 } from "../Query";
 import "../App.css";
-import "@esri/calcite-components/dist/components/calcite-segmented-control";
-import "@esri/calcite-components/dist/components/calcite-segmented-control-item";
 import "@esri/calcite-components/dist/components/calcite-label";
 import "@esri/calcite-components/dist/components/calcite-checkbox";
 import { CalciteLabel, CalciteCheckbox } from "@esri/calcite-components-react";
@@ -34,8 +32,6 @@ import {
   updatedDateCategoryNames,
   valueLabelColor,
 } from "../uniqueValues";
-import "@arcgis/map-components/dist/components/arcgis-scene";
-import "@arcgis/map-components/components/arcgis-scene";
 import { MyContext } from "../contexts/MyContext";
 
 // Dispose function

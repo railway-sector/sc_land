@@ -4,7 +4,7 @@ import "../index.css";
 import "../App.css";
 import { MyContext } from "../contexts/MyContext";
 import GenerateDropdownData from "npm-dropdown-package";
-import { lotLayer } from "../layers";
+import { lotLayer } from "../fLayers";
 export default function DropdownData() {
   const { updateMunicipals, updateBarangays } = use(MyContext);
 

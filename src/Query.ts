@@ -1,12 +1,25 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
+declare const $arcgis: any;
 import {
   dateTable,
   lotLayer,
   nloLayer,
   pierAccessLayer,
   structureLayer,
-} from "./layers";
-import StatisticDefinition from "@arcgis/core/rest/support/StatisticDefinition";
+} from "./fLayers";
+const StatisticDefinition = await $arcgis.import(
+  "@arcgis/core/rest/support/StatisticDefinition",
+);
+const FeatureFilter = await $arcgis.import(
+  "@arcgis/core/layers/support/FeatureFilter",
+);
+const Query = await $arcgis.import("@arcgis/core/rest/support/Query");
+
+// import FeatureFilter from "@arcgis/core/layers/support/FeatureFilter";
+import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
+// import Query from "@arcgis/core/rest/support/Query";
+// import StatisticDefinition from "@arcgis/core/rest/support/StatisticDefinition";
+
 import * as am5 from "@amcharts/amcharts5";
 import {
   nloStatusLabel,
@@ -32,9 +45,6 @@ import {
   pierAccessBatchField,
   pierAccessStatusField,
 } from "./uniqueValues";
-import FeatureFilter from "@arcgis/core/layers/support/FeatureFilter";
-import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
-import Query from "@arcgis/core/rest/support/Query";
 
 // get last date of month
 export function lastDateOfMonth(date: Date) {

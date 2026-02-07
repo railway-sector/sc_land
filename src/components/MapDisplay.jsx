@@ -1,19 +1,8 @@
 import { useEffect, useState } from "react";
 import "../index.css";
 import "../App.css";
-// import "@arcgis/map-components/dist/components/arcgis-scene";
-// import "@arcgis/map-components/components/arcgis-scene";
-// import "@arcgis/map-components/components/arcgis-zoom";
-// import "@arcgis/map-components/components/arcgis-legend";
-// import "@arcgis/map-components/components/arcgis-basemap-gallery";
-// import "@arcgis/map-components/components/arcgis-layer-list";
-// import "@arcgis/map-components/components/arcgis-expand";
-// import "@arcgis/map-components/components/arcgis-placement";
-// import "@arcgis/map-components/components/arcgis-search";
-// import "@arcgis/map-components/components/arcgis-compass";
 import {
   structureLayer,
-  pierAccessLayer,
   stationLayer,
   alignmentGroupLayer,
   nloLoOccupancyGroupLayer,
@@ -23,8 +12,8 @@ import {
   ngcp6_groupLayer,
   somco_fense_layer,
   handedOverLotLayer,
-} from "../layers";
-// import "@esri/calcite-components/dist/components/calcite-button";
+  pierAccessLayer,
+} from "../fLayers";
 
 function MapDisplay() {
   const [sceneView, setSceneView] = useState();

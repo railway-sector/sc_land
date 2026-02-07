@@ -9,8 +9,6 @@ import {
   CalciteTabNav,
   CalciteTabTitle,
 } from "@esri/calcite-components-react";
-import "@arcgis/map-components/dist/components/arcgis-scene";
-import "@arcgis/map-components/components/arcgis-scene";
 import LotChart from "./LotChart";
 import "../index.css";
 import "../App.css";

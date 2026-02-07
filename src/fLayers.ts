@@ -32,27 +32,6 @@ const CustomContent = await $arcgis.import(
   "@arcgis/core/popup/content/CustomContent",
 );
 const PopupTemplate = await $arcgis.import("@arcgis/core/PopupTemplate");
-
-// import LabelClass from "@arcgis/core/layers/support/LabelClass";
-// import SimpleFillSymbol from "@arcgis/core/symbols/SimpleFillSymbol";
-// import UniqueValueRenderer from "@arcgis/core/renderers/UniqueValueRenderer";
-// import SimpleRenderer from "@arcgis/core/renderers/SimpleRenderer";
-// import GroupLayer from "@arcgis/core/layers/GroupLayer";
-// import {
-//   TextSymbol3DLayer,
-//   LabelSymbol3D,
-//   SimpleLineSymbol,
-//   PolygonSymbol3D,
-//   ExtrudeSymbol3DLayer,
-//   PointSymbol3D,
-//   IconSymbol3DLayer,
-//   SimpleMarkerSymbol,
-//   LineSymbol3D,
-//   PathSymbol3DLayer,
-// } from "@arcgis/core/symbols";
-// import SolidEdges3D from "@arcgis/core/symbols/edges/SolidEdges3D";
-// import CustomContent from "@arcgis/core/popup/content/CustomContent";
-// import PopupTemplate from "@arcgis/core/PopupTemplate";
 import {
   barangayField,
   cpField,

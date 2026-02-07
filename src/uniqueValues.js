@@ -2,8 +2,6 @@ const Collection = await $arcgis.import("@arcgis/core/core/Collection");
 const ActionButton = await $arcgis.import(
   "@arcgis/core/support/actions/ActionButton",
 );
-// import Collection from "@arcgis/core/core/Collection";
-// import ActionButton from "@arcgis/core/support/actions/ActionButton";
 import { highlightLot } from "./Query";
 import { tunnelAffectedLotLayer } from "./fLayers";
 const arcgisScene = document.querySelector("arcgis-scene");
